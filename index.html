@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="mainContainer">
+      <hr>
+      <div class="subContainer optionsContainer">
+        <h1>-  — OPTIONS — -</h1>
+        
+        <table class="center">
+          <tr>
+            <th>Addresses</th>
+            <th>|</th>
+            <th>Max Value</th>
+            <th>|</th>
+            <th>Made by Carter Clifton</th>
+          </tr>
+          <tr>
+            <td> <input id="addressValueInput" type="number" value="10"> </td>
+            <td>|</td>
+            <td> <input id="maxValueInput" type="number" value="127"> </td>
+            <td>|</td>
+            <td> <button id="updateButton" type="button">UPDATE</button> </td>
+          </tr>
+        </table>
+      </div>
+      <hr>
+      <div class="subContainer inputContainer">
+        <textarea id="codeEntry" onkeyup="runCode()" style="margin-bottom: 2vh;"></textarea>
+      </div>
+      <hr>
+      <div class="subContainer memoryContainer">
+        <h1 id="memoryAddresses"></h1>
+      </div>
+      <hr>
+      <div class="subContainer outputContainer">
+        <h1>-  — OUTPUT — -</h1>
+        <div class="alignCenter">
+          <h2 id="output"></h2>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <script src="brainfuck.js"></script>
+  </body>
+</html>
